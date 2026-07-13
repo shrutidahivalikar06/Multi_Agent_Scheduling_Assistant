@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+
+appointments.db
+conversation_memory.db
+
+.streamlit/
+
+.idea/
+.vscode/
