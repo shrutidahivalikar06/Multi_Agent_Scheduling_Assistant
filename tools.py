@@ -1,9 +1,13 @@
 import sqlite3
 import requests
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 DB_NAME = "appointments.db"
-WEBHOOK_URL = "https://webhook.site/f97d7240-1173-41a5-8d84-15fffbc54b1d"
-
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 # Available slots for every day
 DEFAULT_SLOTS = [
     "09:00",
