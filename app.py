@@ -1,7 +1,12 @@
 import streamlit as st
 from langchain_core.messages import HumanMessage
-
+from database import initialize_database
 from graph import graph
+from database import initialize_database
+
+
+initialize_database()
+
 
 st.set_page_config(
     page_title="Multi-Agent Scheduling Assistant",
